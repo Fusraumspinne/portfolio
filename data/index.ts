@@ -92,7 +92,7 @@ export const navItems = [
       des: "A opne-world game where you are a criminal, who tries to get rich by planting and selling drugs.",
       img: "/p3.svg",
       iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
-      link: "https://github.com/Fusraumspinne",
+      link: "https://github.com/Fusraumspinne/Frankfurt",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ export const navItems = [
       des: "A interactive shooter game with a lot of actions and cool and unique abilities.",
       img: "/p4.svg",
       iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
-      link: "https://github.com/Fusraumspinne",
+      link: "https://github.com/Fusraumspinne/FPS",
     },
   ];
   
