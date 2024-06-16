@@ -8,7 +8,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "I'm working remote, flexible and effective for my clients",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
+      title: "I'm very flexible with communication around the world",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently building this Portfolio with Next.js",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,68 +72,73 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "Online Chat-Application",
+      des: "Explore my Chat-Application build with Next.JS and MongoDB for an real time communication.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/mongodb_logo.png"],
+      link: "https://github.com/Fusraumspinne/flopper-chat",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "Online Shop for Burgers",
+      des: "A simple online-shop for different kinds of burgers.",
       img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/mongodb_logo.png"],
+      link: "https://github.com/Fusraumspinne/online-shop",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      title: "Open-World Game",
+      des: "A opne-world game where you are a criminal, who tries to get rich by planting and selling drugs.",
       img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
+      link: "https://github.com/Fusraumspinne",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      title: "First-Person-Shooter",
+      des: "A interactive shooter game with a lot of actions and cool and unique abilities.",
       img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
+      link: "https://github.com/Fusraumspinne",
     },
   ];
   
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Playing Marvin's game was an absolute blast. The attention to detail, engaging gameplay, and innovative features made it an unforgettable experience. If you're looking for top-notch entertainment, Adrian's games are a must-play!",
+      name: "Tathan",
+      title: "Professionel Valorant Player",
+      img: "/valoPro.jpg"
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Marvin's chat app is a game-changer. The seamless interface, robust features, and user-friendly design make it the best chat app I've ever used. Communication has never been easier or more enjoyable!",
+      name: "Mr. Gaming",
+      title: "Child molester",
+      img: "/child.jpg"
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "I was amazed by Marvin's game development skills. The graphics, story, and gameplay mechanics are top-tier. Every aspect of the game shows Marvin's dedication and passion for creating exceptional gaming experiences.",
+      name: "Hammerhai",
+      title: "Pirate voter",
+      img: "/pirate.jpg"
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Marvin's chat app is phenomenal. It's intuitive, reliable, and packed with great features that enhance every conversation. It's clear that a lot of thought and effort went into making it this good.",
+      name: "Pawel",
+      title: "Small",
+      img: "/small.jpg"
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Marvin's games are incredible. The creativity, challenge, and fun they offer are unparalleled. Each game is a testament to his skill and imagination. Highly recommend playing them!",
+      name: "Hentai Master",
+      title: "Hentai dependent",
+      img: "/hentaiMaster.jpg"
     },
   ];
   
@@ -173,29 +178,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Fullstack Webdeveloper",
+      desc: "Experiences in Frontend- and Backenddevelopment by creating diffrent Websites.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Database Manager",
+      desc: "Own diffrent Databases like some MongoDB's or one SQL Database.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Freelance Web- and Gamedeveloper",
+      desc: "Making diffrent Projects every Month, to learn more about programming.",
+      className: "md:col-span-2", 
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Unity Developer",
+      desc: "Gamedevelopment in Unity, one of the most used Engine in the World.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
