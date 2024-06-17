@@ -38,7 +38,7 @@ export const projects = [
         title: "Backend",
         description:
             "The backend is everything that happens behind the scenes, like a Database and an simple way to create your own Database is with MongoDB which is powerful and easy to understand.",
-        link: "https://meta.com",
+        link: "https://mongodb.com",
     },
     {
         title: "Framework",
