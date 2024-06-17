@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className='w-full pb-10 mb-[50px] md:mb-5' id='contact'>
             <div className='flex flex-col items-center'>
                 <h1 className='heading lg:max-w-[45vw]'>
-                    Ready to take <span className='text-purple'>your</span> digital presence to the next level?
+                    Ready to take <span className='text-purple'>your</span> digital skill to the next level?
                 </h1>
 
                 <div className="w-[40rem] h-40 relative">
@@ -20,9 +20,9 @@ const Footer = () => {
 
                     <SparklesCore
                         background="transparent"
-                        minSize={0.4}
+                        minSize={0.75}
                         maxSize={1}
-                        particleDensity={500}
+                        particleDensity={100}
                         className="w-full h-full"
                         particleColor="#FFFFFF"
                     />
