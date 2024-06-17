@@ -7,6 +7,7 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import { TabsDemo } from "@/components/CodeExamples";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <RecentProjects/>
         <Clients/>
         <Experience/>
+        <TabsDemo/>
         <Approach/>
         <Footer/>
       </div>
