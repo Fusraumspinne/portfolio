@@ -74,7 +74,7 @@ export const navItems = [
       id: 1,
       title: "Online Chat-Application",
       des: "Explore my Chat-Application build with Next.JS and MongoDB for an real time communication.",
-      img: "/p1.svg",
+      img: "/chatapp.png",
       iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/mongodb_logo.png"],
       link: "https://github.com/Fusraumspinne/flopper-chat",
     },
@@ -82,7 +82,7 @@ export const navItems = [
       id: 2,
       title: "Online Shop for Burgers",
       des: "A simple online-shop for different kinds of burgers.",
-      img: "/p2.svg",
+      img: "/onlineShop.png",
       iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/fm.svg", "/mongodb_logo.png"],
       link: "https://github.com/Fusraumspinne/online-shop",
     },
@@ -90,7 +90,7 @@ export const navItems = [
       id: 3,
       title: "Open-World Game",
       des: "A opne-world game where you are a criminal, who tries to get rich by planting and selling drugs.",
-      img: "/p3.svg",
+      img: "/openWorldGame.png",
       iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
       link: "https://github.com/Fusraumspinne/Frankfurt",
     },
@@ -98,7 +98,7 @@ export const navItems = [
       id: 4,
       title: "First-Person-Shooter",
       des: "A interactive shooter game with a lot of actions and cool and unique abilities.",
-      img: "/p4.svg",
+      img: "/FPSShooter.png",
       iconLists: ["/logo_csharp.png", "/vs_logo.png", "/unity_logo.png"],
       link: "https://github.com/Fusraumspinne/FPS",
     },
@@ -110,7 +110,7 @@ export const navItems = [
         "Playing Marvin's game was an absolute blast. The attention to detail, engaging gameplay, and innovative features made it an unforgettable experience. If you're looking for top-notch entertainment, Adrian's games are a must-play!",
       name: "Tathan",
       title: "Professionel Valorant Player",
-      img: "/valoPro.jpg"
+      img: "/valoPro.jpeg"
     },
     {
       quote:
