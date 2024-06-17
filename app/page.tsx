@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import { TabsDemo } from "@/components/CodeExamples";
+import { CardHoverEffectDemo } from "@/components/Inspiration";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Experience/>
         <TabsDemo/>
         <Approach/>
+        <CardHoverEffectDemo/>
         <Footer/>
       </div>
     </main>
