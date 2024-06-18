@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className='w-full pb-10 mb-[50px] md:mb-5' id='contact'>
             <div className='flex flex-col items-center'>
                 <h1 className='heading lg:max-w-[45vw] mb-10'>
-                    Ready to take <span className='text-purple'>your</span> digital skill to the next<FlipWords words={words} duration={1500}/>?
+                    Ready to take <span className='text-purple'>your</span> digital skill to the next<FlipWords words={words} duration={1500}/>
                 </h1>
                 
                 <a href="mailto:mjjaeger2002@gmail.com">
