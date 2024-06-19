@@ -9,6 +9,7 @@ import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import { TabsDemo } from "@/components/CodeExamples";
 import { CardHoverEffectDemo } from "@/components/Inspiration";
+import { TailwindcssButtons } from "@/components/button";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Approach/>
         <CardHoverEffectDemo/>
         <Footer/>
+        <TailwindcssButtons/>
       </div>
     </main>
   );
