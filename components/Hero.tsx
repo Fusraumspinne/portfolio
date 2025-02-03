@@ -7,7 +7,7 @@ export function Hero() {
 }
 export const products = [
     {
-        title: "Druglord's Legacy",
+        title: "Druglord's Legacy #1",
         thumbnail: "/images/DruglordsLegacy1.png",
     },
     {
@@ -19,7 +19,7 @@ export const products = [
         thumbnail: "/images/GetOffTheVirus1.png",
     },
     {
-        title: "Druglord's Legacy",
+        title: "Druglord's Legacy #4",
         thumbnail: "/images/DruglordsLegacy4.png",
     },
     {
@@ -27,7 +27,7 @@ export const products = [
         thumbnail: "/images/ChatApp1.png",
     },
     {
-        title: "Chat App",
+        title: "Chat App with PHP",
         thumbnail: "/images/ChatApp2.jpg",
     },
     {
@@ -35,7 +35,7 @@ export const products = [
         thumbnail: "/images/ChatApp3.png",
     },
     {
-        title: "Druglord's Legacy",
+        title: "Druglord's Legacy #2",
         thumbnail: "/images/DruglordsLegacy2.png",
     },
     {
@@ -51,7 +51,7 @@ export const products = [
         thumbnail: "/images/ToDoApp1.png",
     },
     {
-        title: "Druglord's Legacy",
+        title: "Druglord's Legacy #3",
         thumbnail: "/images/DruglordsLegacy3.png",
     },
     {
