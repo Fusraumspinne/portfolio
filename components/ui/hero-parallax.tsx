@@ -8,6 +8,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import Image from "next/image";
+import { TextGenerator } from "../TextGenerator";
 
 export const HeroParallax = ({
   products,
@@ -103,10 +104,10 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 opacity-100 z-10">
       <h1 className="text-4xl md:text-7xl font-bold text-white">
-        Hey, I am a <br /> 16/yo Web- and Gamedev
+        <TextGenerator words="Hey" />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-        I am a german student, who makes cool projects and tries to get into software development.
+        <TextGenerator words=" I am a 16/yo german student, who makes cool projects and tries to get into software development, especially into Web- and Gamedev." />
       </p>
     </div>
   );
@@ -137,7 +138,7 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0 rounded"
           alt={product.title}
         />
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
