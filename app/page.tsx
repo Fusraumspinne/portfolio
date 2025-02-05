@@ -7,7 +7,9 @@ export default function Home() {
     <div className="bg-slate-950">
       <NavBar/>
       <Hero/>
-      <Grid/>
+      <div className="mx-4">
+        <Grid/>
+      </div>
     </div>
   );
 }
