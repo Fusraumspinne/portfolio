@@ -1,3 +1,4 @@
+import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
 import { NavBar } from "@/components/NavBar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="bg-slate-950">
       <NavBar/>
       <Hero/>
+      <Grid/>
     </div>
   );
 }
