@@ -30,7 +30,7 @@ export function Grid() {
 }
 
   const Skeleton = ({ id }: { id?: number | null }) => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br border-white/[0.2] border">
       {id === 4 ? (
         <div className="relative w-full h-full">
           <div className="absolute inset-0 z-10">
@@ -53,6 +53,39 @@ export function Grid() {
         ) : (
           <div></div>
         )}
+
+    {id === 2 ? (
+      <div>
+        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
+      </div>
+    ) : (
+      <div></div>
+    )}
+
+    {id === 3 ? (
+      <div>
+        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
+      </div>
+    ) : (
+      <div></div>
+    )}
+
+    {id === 5 ? (
+      <div>
+        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full"/>
+      </div>
+    ) : (
+      <div></div>
+    )}
+
+    {id === 1 ? (
+      <div>
+        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
+      </div>
+    ) : (
+      <div></div>
+    )}
+
     </div>
   );
 
@@ -60,25 +93,25 @@ const items = [
   {
     title: "The Dawn of Innovation",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    header: <Skeleton id={1}/>,
     icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
     title: "The Digital Revolution",
     description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    header: <Skeleton id={2} />,
     icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    header: <Skeleton id={3} />,
     icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
     title: "My Techstacks",
     description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
+    header: <Skeleton id={5} />,
     icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
