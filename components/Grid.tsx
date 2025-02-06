@@ -5,6 +5,10 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
 import { GradientBackground } from "./GradientBackground";
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import LaptopRoundedIcon from '@mui/icons-material/LaptopRounded';
+import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
+import ChecklistRoundedIcon from '@mui/icons-material/ChecklistRounded';
+import BugReportRoundedIcon from '@mui/icons-material/BugReportRounded';
 
 export function Grid() {
   return (
@@ -36,51 +40,54 @@ export function Grid() {
           <div className="absolute inset-0 z-10">
             <GradientBackground />
           </div>
-          <div className="relative grid grid-cols-6 gap-4 p-4 z-20 justify-items-center items-center h-full w-full">
-            <Image src={"/icons/HTML.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/CSS.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/JS.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/TS.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/React.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/NextJS.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/MongoDB.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/CSharp.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/Unity.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/Java.png"} alt={"Icon"} width={40} height={40} />
-            <Image src={"/icons/Python.png"} alt={"Icon"} width={40} height={40} />
-          </div>
+            <div className="relative grid grid-cols-6 gap-4 p-4 z-20 justify-items-center items-center h-full w-full">
+            <Image src={"/icons/HTML.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/CSS.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/JS.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/TS.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/React.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/NextJS.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/MongoDB.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/CSharp.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/Unity.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/Java.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/Python.png"} alt={"Icon"} width={35} height={35} />
+            <Image src={"/icons/GitHub.png"} alt={"Icon"} width={35} height={35} />
+            </div>
         </div>
         ) : (
           <div></div>
         )}
 
     {id === 2 ? (
-      <div>
-        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
-      </div>
+      <div className=" overflow-hidden w-full relative">
+      <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full absolute"/>
+      <Image src={"/b4.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full ms-[2rem] mt-[3rem]"/>
+    </div>
     ) : (
       <div></div>
     )}
 
     {id === 3 ? (
-      <div>
-        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
+      <div className="w-full h-full">
+        <Image src={"/images/Reyna.jpg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full rounded-xl"/>
       </div>
     ) : (
       <div></div>
     )}
 
     {id === 5 ? (
-      <div>
-        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full"/>
+      <div className=" overflow-hidden w-full relative">
+        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full absolute"/>
+        <Image src={"/b5.svg"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full ms-[0.5rem] mt-[0.3rem]"/>
       </div>
     ) : (
       <div></div>
     )}
 
     {id === 1 ? (
-      <div>
-        <Image src={"/grid.svg"} alt={"Icon"} width={1000} height={1000} className="h-full w-full"/>
+      <div className="h-full w-full relative">
+        <Image src={"/images/Projects.png"} alt={"Icon"} width={1000} height={1000}  className="h-full w-full rounded-xl"/>
       </div>
     ) : (
       <div></div>
@@ -91,28 +98,28 @@ export function Grid() {
 
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "My favorite projects",
+    description: "From this portfolio, my first big game to online-shops and chat-apps",
     header: <Skeleton id={1}/>,
-    icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
+    icon: <ChecklistRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Current project",
+    description: "I am working on a survival game",
     header: <Skeleton id={2} />,
-    icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
+    icon: <AccountTreeRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Mental problems",
+    description: "Valorant",
     header: <Skeleton id={3} />,
-    icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
+    icon: <BugReportRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
-    title: "My Techstacks",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Tech enthusiast",
+    description: " with a passion for deveolpming",
     header: <Skeleton id={5} />,
-    icon: <CodeRoundedIcon className="h-4 w-4 text-white" />,
+    icon: <LaptopRoundedIcon className="h-4 w-4 text-white" />,
   },
   {
     title: "My Techstacks",
