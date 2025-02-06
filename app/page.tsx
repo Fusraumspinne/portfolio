@@ -1,6 +1,7 @@
 import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
 import { NavBar } from "@/components/NavBar";
+import { TimeLine } from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero/>
       <div className="mx-4">
         <Grid/>
+        <TimeLine/>
       </div>
     </div>
   );
