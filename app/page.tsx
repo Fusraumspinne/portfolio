@@ -1,7 +1,7 @@
 import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
 import { NavBar } from "@/components/NavBar";
-import { TimeLine } from "@/components/Timeline";
+import { TimeLine } from "@/components/TimeLine";
 
 export default function Home() {
   return (

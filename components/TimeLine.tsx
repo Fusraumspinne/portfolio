@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import ExpandableCardDemo from "./expandable-card-demo-standard";
 
 export function TimeLine() {
   const data = [
@@ -8,11 +9,8 @@ export function TimeLine() {
       title: "2024",
       content: (
         <div>
-          <p className="text-white text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
-          </p>
           <div>
-            
+            <ExpandableCardDemo count={0}/>
           </div>
         </div>
       ),
@@ -29,8 +27,25 @@ export function TimeLine() {
             Lorem ipsum is for people who are too lazy to write copy. But we are
             not. Here are some more example of beautiful designs I built.
           </p>
+        </div>
+      ),
+    },
+    {
+      title: "2023",
+      content: (
+        <div>
           <div>
-
+            <ExpandableCardDemo count={0}/>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2022",
+      content: (
+        <div>
+          <div>
+            <ExpandableCardDemo count={0}/>
           </div>
         </div>
       ),
