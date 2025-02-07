@@ -75,8 +75,8 @@ export default function ExpandableCardDemo({ count }: { count: number }) {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
-                  width={200}
-                  height={200}
+                  width={1000}
+                  height={1000}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -104,7 +104,7 @@ export default function ExpandableCardDemo({ count }: { count: number }) {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-white hover:bg-blue-500 hover:text-white text-black"
+                    className={`px-4 py-3 text-sm rounded-full font-bold ${active.ctaLink == "" ? "bg-slate-950 text-slate-950" : " bg-white hover:bg-blue-500 hover:text-white text-black"}`}
                   >
                     View on GitHub
                   </motion.a>
@@ -138,8 +138,8 @@ export default function ExpandableCardDemo({ count }: { count: number }) {
             <div className="flex gap-4 flex-col md:flex-row">
               <motion.div layoutId={`image-${cardToShow.title}-${id}`}>
                 <Image
-                  width={100}
-                  height={100}
+                  width={1000}
+                  height={1000}
                   src={cardToShow.src}
                   alt={cardToShow.title}
                   className="h-40 w-40 md:h-14 md:w-14 object-cover object-top rounded-xl border-white/[0.2] border"
@@ -210,22 +210,13 @@ const cards = [
   {
     description: "Personal portfolio",
     title: "Portfolio",
-    src: "/images/Reyna.jpg",
+    src: "/images/Portfolio1.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/portfolio",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          My personal portfolio made with AceternityUI and Next.js just to show off what I have made so far. This project showcases my skills in modern web development technologies and design principles. It includes various sections such as my projects, skills, and contact information, providing a comprehensive overview of my work and capabilities.
         </p>
       );
     },
@@ -233,22 +224,13 @@ const cards = [
   {
     description: "First big game",
     title: "Druglord's Legacy",
-    src: "/images/Reyna.jpg",
+    src: "/images/DruglordsLegacy2.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/druglord-s-legacy",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          On this game, I worked for around 6 months. It was my biggest game, and I played it for around 80 hours to max out. I published it for free and managed a Discord server with some players. I also provided my own website for it.
         </p>
       );
     },
@@ -256,22 +238,13 @@ const cards = [
   {
     description: "Own neural network",
     title: "AI-Project",
-    src: "/images/Reyna.jpg",
+    src: "/images/AI1.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/dodgeball-ai",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          I made an AI project where I wrote my own neural network. It was fascinating to see the network improving over time, but I eventually stopped working on it because it became quite frustrating. Despite the challenges, this project was a valuable learning experience that deepened my understanding of machine learning and neural networks.
         </p>
       );
     },
@@ -279,22 +252,13 @@ const cards = [
   {
     description: "Websocket chat app",
     title: "Chat-App",
-    src: "/images/Reyna.jpg",
+    src: "/images/ChatApp1.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/websocket-chatapp",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          A chat app with WebSockets and MongoDB. I also made two YouTube tutorials about it. It was a really cool project to learn about real-time communication and database integration. This project helped me understand the intricacies of WebSocket connections, handling real-time data, and working with MongoDB for efficient data storage and retrieval. It was a valuable learning experience that enhanced my skills in building interactive and dynamic web applications.
         </p>
       );
     },
@@ -302,22 +266,13 @@ const cards = [
   {
     description: "Another Next.js project",
     title: "Online-Shop",
-    src: "/images/Reyna.jpg",
+    src: "/images/OnlineShop1.jpg",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/advanced-online-shop",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          An online shop which I never finished but was a cool project to learn components in Next.js. This project helped me understand the fundamentals of building e-commerce platforms, including product listings, shopping carts, and user authentication. Although it remains incomplete, it was a valuable learning experience that improved my skills in Next.js and component-based architecture.
         </p>
       );
     },
@@ -325,22 +280,13 @@ const cards = [
   {
     description: "Chat app with MongoDB",
     title: "Flopper-Chat App",
-    src: "/images/Reyna.jpg",
+    src: "/images/ChatApp3.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/flopper-chat",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          A newer chat app made with MongoDB, this time completely developed by myself with lots of features like group chats and file upload. This project showcases my ability to work with modern databases and implement advanced functionalities in a web application. It was a significant step forward in my development skills, allowing me to create a more robust and user-friendly chat application.
         </p>
       );
     },
@@ -348,22 +294,13 @@ const cards = [
   {
     description: "First Next.js project",
     title: "Burger-Shop",
-    src: "/images/Reyna.jpg",
+    src: "/images/BurgerShop1.jpg",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/online-shop",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          During my internship, I made an online shop for burgers with Next.js and MongoDB. This project involved creating a full-stack application with a focus on user experience and performance. The online shop features a dynamic menu, user authentication, and a shopping cart system. It was a great opportunity to apply my skills in modern web development and learn more about integrating frontend and backend technologies.
         </p>
       );
     },
@@ -371,22 +308,13 @@ const cards = [
   {
     description: "Reworked version",
     title: "Plantagen-Manager 2",
-    src: "/images/Reyna.jpg",
+    src: "/images/PlantagenManager1.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/Plantagen-Manager-2",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          A reworked version of Plantagen Manager 1 with new products and some more features. This version includes enhanced graphics, additional levels, and improved gameplay mechanics. Players can now explore new territories, manage a wider variety of resources, and face more challenging scenarios. The updates aim to provide a more immersive and engaging experience for players, building on the foundation of the original game.
         </p>
       );
     },
@@ -394,22 +322,13 @@ const cards = [
   {
     description: "My first chat app with PHP",
     title: "Flopper-Chat",
-    src: "/images/Reyna.jpg",
+    src: "/images/ChatApp2.jpg",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/chatapp-php",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          My first project with a database using MySQL. I created this chat app with PHP, and it was really helpful during tests in school. This project taught me the basics of backend development, database management, and how to integrate a frontend with a backend. It was a valuable learning experience that laid the foundation for more complex projects in the future.
         </p>
       );
     },
@@ -417,22 +336,13 @@ const cards = [
   {
     description: "Website to manage school stuff",
     title: "School-Manager",
-    src: "/images/Reyna.jpg",
+    src: "/images/WetterApp1.png",
     ctaText: "Expand",
     ctaLink: "",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          A website with a to-do list, weather app, calculator, gambling, and mini-games - everything you need for school. This project was designed to be a comprehensive tool for students, providing various functionalities to help manage their tasks, stay updated with the weather, perform calculations, and have some fun with mini-games during breaks. It showcases my ability to integrate multiple features into a single application, enhancing user experience and utility.
         </p>
       );
     },
@@ -440,22 +350,13 @@ const cards = [
   {
     description: "Another Game",
     title: "Tactical-Shooter",
-    src: "/images/Reyna.jpg",
+    src: "/images/Shooter1.png",
     ctaText: "Expand",
     ctaLink: "",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          This was my first and my last shooter. I made it with lots of features, but I am not good with animations, so I just make strategy games now. The game included various weapons, enemy types, and levels, providing an engaging experience for players. Despite the challenges with animations, this project was a valuable learning experience and helped me understand the complexities of game development.
         </p>
       );
     },
@@ -463,22 +364,13 @@ const cards = [
   {
     description: "First JS project",
     title: "ToDo-List",
-    src: "/images/Reyna.jpg",
+    src: "/images/ToDoList1.png",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/GoofyCheckliste",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          This was my first project with JavaScript, a simple to-do list which saves tasks in the browser storage. It was a great introduction to JavaScript and helped me understand how to manipulate the DOM, handle events, and work with local storage. This project laid the foundation for more advanced JavaScript applications and improved my problem-solving skills.
         </p>
       );
     },
@@ -486,22 +378,13 @@ const cards = [
   {
     description: "First website",
     title: "HTML-Website",
-    src: "/images/Reyna.jpg",
+    src: "/images/HTMLWebsite1.jpg",
     ctaText: "Expand",
-    ctaLink: "",
+    ctaLink: "https://github.com/Fusraumspinne/HTMLTags",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          This was my first website made with HTML, nothing special. It was a simple static website that showcased my initial understanding of HTML and CSS. This project was a stepping stone in my web development journey, helping me grasp the basics of web design and layout. It laid the foundation for more complex projects in the future.
         </p>
       );
     },
@@ -509,22 +392,13 @@ const cards = [
   {
     description: "First bigger game",
     title: "Plantagen-Manager 1",
-    src: "/images/Reyna.jpg",
+    src: "/images/PlantagenManager1.png",
     ctaText: "Expand",
     ctaLink: "",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          I love tycoon games and in this game, I tried to make one on my own. In this game, you try to become the druglord by managing resources, expanding your territory, and overcoming various challenges. It was an exciting project that allowed me to explore game mechanics, resource management, and strategic planning. This project was a great learning experience and helped me improve my skills in game development.
         </p>
       );
     },
@@ -532,22 +406,13 @@ const cards = [
   {
     description: "First game made by my own",
     title: "Get off the Virus",
-    src: "/images/Reyna.jpg",
+    src: "/images/GetOffTheVirus1.png",
     ctaText: "Expand",
     ctaLink: "",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Get off the Virus is a zombie shooter game that I made completely by myself. It was my first real project and involved a lot of learning and experimentation. The game features various levels, different types of enemies, and a range of weapons for the player to use. This project helped me understand the fundamentals of game development, including level design, character movement, and game mechanics. It was a challenging but rewarding experience that laid the groundwork for my future projects.
         </p>
       );
     },
@@ -555,22 +420,13 @@ const cards = [
   {
     description: "First Game",
     title: "Spaceshooter",
-    src: "/images/Reyna.jpg",
+    src: "/images/SpaceShooter1.png",
     ctaText: "Expand",
     ctaLink: "",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Spaceshooter made with a tutorial and expanded by myself, first Unity project. This game was a significant milestone in my journey as a game developer. It involved learning the basics of Unity, understanding game mechanics, and implementing features such as player controls, enemy AI, and scoring systems. The project helped me develop a strong foundation in game development and sparked my interest in creating more complex and engaging games in the future.
         </p>
       );
     },
