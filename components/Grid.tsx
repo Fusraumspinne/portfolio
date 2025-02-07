@@ -13,9 +13,9 @@ import BugReportRoundedIcon from '@mui/icons-material/BugReportRounded';
 export function Grid() {
   return (
     <div>
-      <div className="max-w-7xl mx-auto mb-12 md:mb-24 px-4 md:px-8 lg:px-10 flex justify-center">
+      <div className="max-w-7xl mx-auto mb-8 md:mb-12 px-4 md:px-8 lg:px-10 flex justify-center">
         <h2 className="text-lg md:text-4xl text-white max-w-4xl">
-          About Me
+          About <span className="text-purple-300">Me</span>
         </h2>
       </div>
 

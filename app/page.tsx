@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { Grid } from "@/components/Grid";
 import { Hero } from "@/components/Hero";
@@ -14,6 +15,9 @@ export default function Home() {
       <div className="mx-4">
         <div id="about">
           <Grid/>
+        </div>
+        <div id="experience">
+         <Experience/>
         </div>
         <div id="timeline">
           <TimeLine/>

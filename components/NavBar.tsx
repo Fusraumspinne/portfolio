@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import TimelineRoundedIcon from '@mui/icons-material/TimelineRounded';
+import GradeRoundedIcon from '@mui/icons-material/GradeRounded';
 
 export function NavBar() {
   const navItems = [
@@ -16,7 +17,12 @@ export function NavBar() {
         name: "About",
         link: "#about",
         icon: <PersonRoundedIcon className="h-4 w-4 text-white" />,
-      },
+    },
+    {
+      name: "Experience",
+      link: "#experience",
+      icon: <GradeRoundedIcon className="h-4 w-4 text-white" />,
+    },
     {
       name: "Timeline",
       link: "#timeline",
