@@ -19,9 +19,13 @@ export default function ExpandableCardDemo({ count }: { count: number }) {
     }
 
     if (active && typeof active === "object") {
-      document.body.style.overflow = "hidden";
+      // Berechne die Breite der Scrollbar:
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden"; // Scrollen deaktivieren
+      document.body.style.paddingRight = `${scrollbarWidth}px`; // Platz für Scrollbar erhalten
     } else {
       document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
     }
 
     window.addEventListener("keydown", onKeyDown);

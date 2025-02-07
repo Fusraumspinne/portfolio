@@ -12,24 +12,32 @@ import BugReportRoundedIcon from '@mui/icons-material/BugReportRounded';
 
 export function Grid() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={
-            i === 0
-              ? "md:col-span-2 md:row-span-2"
-              : i === 4
-              ? "md:col-span-2"
-              : ""
-          }
-        />
-      ))}
-    </BentoGrid>
+    <div>
+      <div className="max-w-7xl mx-auto mb-12 md:mb-24 px-4 md:px-8 lg:px-10 flex justify-center">
+        <h2 className="text-lg md:text-4xl text-white max-w-4xl">
+          About Me
+        </h2>
+      </div>
+
+      <BentoGrid className="max-w-4xl mx-auto">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            icon={item.icon}
+            className={
+              i === 0
+                ? "md:col-span-2 md:row-span-2"
+                : i === 4
+                ? "md:col-span-2"
+                : ""
+            }
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 
