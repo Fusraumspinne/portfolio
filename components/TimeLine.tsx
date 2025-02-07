@@ -119,7 +119,7 @@ export function TimeLine() {
     },
   ];
   return (
-    <div className="w-full mb-96">
+    <div className="w-full mb-44">
       <Timeline data={data} />
     </div>
   );

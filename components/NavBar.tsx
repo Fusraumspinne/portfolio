@@ -10,23 +10,18 @@ export function NavBar() {
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "#home",
       icon: <HomeRoundedIcon className="h-4 w-4 text-white" />,
     },
     {
-        name: "Timeline",
-        link: "/",
-        icon: <TimelineRoundedIcon className="h-4 w-4 text-white" />,
+        name: "About",
+        link: "#about",
+        icon: <PersonRoundedIcon className="h-4 w-4 text-white" />,
       },
     {
-      name: "About",
-      link: "/",
-      icon: <PersonRoundedIcon className="h-4 w-4 text-white" />,
-    },
-    {
-      name: "Contact",
-      link: "/",
-      icon: <EmailRoundedIcon className="h-4 w-4 text-white" />
+      name: "Timeline",
+      link: "#timeline",
+      icon: <TimelineRoundedIcon className="h-4 w-4 text-white" />,
     },
   ];
   return (
