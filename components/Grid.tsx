@@ -125,7 +125,7 @@ const items = [
   },
   {
     title: "Tech enthusiast",
-    description: " with a passion for deveolpming",
+    description: " with a passion for developing",
     header: <Skeleton id={5} />,
     icon: <LaptopRoundedIcon className="h-4 w-4 text-white" />,
   },
