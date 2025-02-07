@@ -3,7 +3,6 @@ import React from "react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import TimelineRoundedIcon from '@mui/icons-material/TimelineRounded';
 
 export function NavBar() {
