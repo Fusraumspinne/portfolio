@@ -108,7 +108,7 @@ export const Header = () => {
         <TextGenerator words="Hey" />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-        <TextGenerator words=" I am a 16/yo german student, who makes cool projects and tries to get into software development, especially into Web- and Gamedev." />
+        <TextGenerator words=" I am a 17/yo german student, who makes cool projects and tries to get into software development, especially into Web- and Gamedev." />
       </p>
     </div>
   );
