@@ -434,4 +434,18 @@ const cards = [
       );
     },
   },
+  {
+    description: "Powered by my own ai",
+    title: "Self-driving car",
+    src: "/images/Auto.jpg",
+    ctaText: "Expand",
+    ctaLink: "https://github.com/Fusraumspinne/Selbstfahrendes_Auto",
+    content: () => {
+      return (
+        <p>
+          This self-driving car project uses a neural network I developed myself to navigate autonomously. Built with a Raspberry Pi and sensors, the car detects obstacles and adjusts its direction in real time. I trained the AI using custom data and implemented logic for movement, steering, and safety. It was a hands-on way to apply machine learning and electronics, combining both software and hardware into a working prototype. This project marks a major step in my journey toward AI-driven robotics.
+        </p>
+      );
+    },
+  },
 ];
