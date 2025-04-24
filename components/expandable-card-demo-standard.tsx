@@ -437,7 +437,7 @@ const cards = [
   {
     description: "Powered by my own ai",
     title: "Self-driving car",
-    src: "/images/Auto.jpg",
+    src: "/images/SelfDrivingCar.jpg",
     ctaText: "Expand",
     ctaLink: "https://github.com/Fusraumspinne/Selbstfahrendes_Auto",
     content: () => {
