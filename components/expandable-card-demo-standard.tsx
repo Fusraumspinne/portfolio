@@ -233,7 +233,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          On this game, I worked for around 6 months. It was my biggest game, and I played it for around 80 hours to max out. I published it for free and managed a Discord server with some players. I also provided my own website for it.
+          On this game, I worked for around 6 months. It was my biggest game, and I played it for around 80 hours to max out. I published it for free and managed a Discord server with some players. I also provided my own website for it. <a href="https://www.youtube.com/watch?v=Uxe6uFr8isc" target="_blank" className="underline text-blue-500">Game Trailer</a>
         </p>
       );
     },
@@ -444,6 +444,20 @@ const cards = [
       return (
         <p>
           This self-driving car project uses a neural network I developed myself to navigate autonomously. Built with a Raspberry Pi and sensors, the car detects obstacles and adjusts its direction in real time. I trained the AI using custom data and implemented logic for movement, steering, and safety. It was a hands-on way to apply machine learning and electronics, combining both software and hardware into a working prototype. This project marks a major step in my journey toward AI-driven robotics.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Own memory manipulation tool",
+    title: "Cheat Engine",
+    src: "/images/FlopperCheat1.png",
+    ctaText: "Expand",
+    ctaLink: "https://github.com/Fusraumspinne/FlopperCheatEngine",
+    content: () => {
+      return (
+        <p>
+          This Cheat Engine is a custom-built memory manipulation tool designed entirely from scratch. It allows you to scan for values in a running process, filter addresses, and modify memory in real time. With a clean UI and paging system, you can easily browse and save memory addresses. I built the scanner using low-level Windows API calls, giving me full control over how memory is read and written. This project helped me deepen my understanding of process memory, Windows internals, and reverse engineering – a powerful learning experience in both system programming and software development.        
         </p>
       );
     },
