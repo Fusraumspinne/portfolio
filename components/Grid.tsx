@@ -113,7 +113,7 @@ const items = [
   },
   {
     title: "Current project",
-    description: "I am working on a survival game",
+    description: "I am working on a Mafia Game and a reworked version of my AI in Python",
     header: <Skeleton id={2} />,
     icon: <AccountTreeRoundedIcon className="h-4 w-4 text-white" />,
   },
