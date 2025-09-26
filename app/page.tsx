@@ -1,3 +1,4 @@
+import LiquidGlass from "@/components/LiquidGlass";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { Grid } from "@/components/Grid";
@@ -24,6 +25,8 @@ export default function Home() {
         </div>
       </div>
       <Footer/>
+
+      <LiquidGlass/>
     </div>
   );
 }
