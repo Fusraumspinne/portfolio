@@ -462,4 +462,18 @@ const cards = [
       );
     },
   },
+  {
+    description: "WebGPU-powered transformer AI",
+    title: "Local ChatBot",
+    src: "/images/TransformerAI1.png",
+    ctaText: "Expand",
+    ctaLink: "https://github.com/Fusraumspinne/transformer-chatbot",
+    content: () => {
+      return (
+        <p>
+          This project is a chatbot that runs entirely locally in the browser using WebGPU, requiring no server-side processing. The model is downloaded once from Hugging Face and then cached in the browser, allowing for full offline access. While the model itself is not particularly advanced, it is a transformer-based instruct model with just over 1 billion parameters, capable of understanding and generating text based on user prompts. This setup demonstrates how modern web technologies can be used to run AI models efficiently and privately, entirely on the client side.        
+        </p>
+      );
+    },
+  },
 ];

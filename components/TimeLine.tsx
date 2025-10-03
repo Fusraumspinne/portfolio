@@ -9,6 +9,9 @@ export function TimeLine() {
       content: (
         <div className="md:mt-36">
           <div className="mb-4">
+            <ExpandableCardDemo count={18}/>
+          </div>
+          <div className="mb-4">
             <ExpandableCardDemo count={17}/>
           </div>
           <div className="mb-4">
