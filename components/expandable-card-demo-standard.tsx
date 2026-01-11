@@ -485,7 +485,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          It is the successor to Druglord's Legacy — larger, more detailed, and featuring more complex systems and a more dynamic game world. Although not finished yet, it already offers entertaining gameplay and significantly more depth; in terms of content it is still similar in scope to its predecessor. Through this project I learned how to plan and structure larger projects, making the design easier to expand and scale.
+          It is the successor to Druglord&apos;s Legacy — larger, more detailed, and featuring more complex systems and a more dynamic game world. Although not finished yet, it already offers entertaining gameplay and significantly more depth; in terms of content it is still similar in scope to its predecessor. Through this project I learned how to plan and structure larger projects, making the design easier to expand and scale.
         </p>
       );
     },
