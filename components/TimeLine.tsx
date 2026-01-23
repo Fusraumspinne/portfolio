@@ -5,6 +5,23 @@ import ExpandableCardDemo from "./expandable-card-demo-standard";
 export function TimeLine() {
   const data = [
     {
+      title: "2026",
+      content: (
+        <div className="md:mt-36">
+          <div className="mb-4">
+            <div className="border-white/[0.2] border rounded-xl text-white p-4">
+              <h2 className="font-medium">Internship</h2>
+                <p>
+                  I completed another one-week internship at the same company, where I worked on a highly complex project that had been in development
+                  for around two years. This was my first experience with a real-world production system, and I implemented an AI voice mode with
+                  dictation functionality, seamlessly integrating it into the existing codebase.
+                </p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
       title: "2025",
       content: (
         <div className="md:mt-36">
